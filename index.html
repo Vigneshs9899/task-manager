@@ -1,20 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Manager</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
 
-    <h1>Task Manager</h1>
+    <h1>📋 Task Manager</h1>
 
-    <input type="text" id="taskInput" placeholder="Enter task">
+    <div class="stats">
+        <div class="stat-card">
+            <h3 id="totalTasks">0</h3>
+            <p>Total Tasks</p>
+        </div>
 
-    <button onclick="addTask()">Add</button>
+        <div class="stat-card">
+            <h3 id="completedTasks">0</h3>
+            <p>Completed</p>
+        </div>
+    </div>
+
+    <div class="input-section">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a task...">
+
+        <button onclick="addTask()">
+            Add
+        </button>
+
+    </div>
 
     <ul id="taskList"></ul>
+
+    <button class="clear-btn" onclick="clearTasks()">
+        Clear All Tasks
+    </button>
 
 </div>
 
