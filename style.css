@@ -1,0 +1,20 @@
+body{
+    font-family:Arial;
+    text-align:center;
+}
+
+.container{
+    width:500px;
+    margin:50px auto;
+}
+
+li{
+    list-style:none;
+    padding:10px;
+    margin:10px;
+    background:#eee;
+}
+
+.completed{
+    text-decoration:line-through;
+}
